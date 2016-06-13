@@ -215,7 +215,6 @@ static int dnssec_chain_parse_cb(SSL *ssl, unsigned int ext_type,
 				 const unsigned char *ext_data, size_t ext_len,
 				 int *al, void *arg)
 {
-    char *cp;
     getdns_list *to_validate_rrs = getdns_list_create();
     getdns_list *support_rrs = getdns_list_create();
     getdns_list *append_to = to_validate_rrs;
