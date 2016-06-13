@@ -1,0 +1,14 @@
+Building from repository
+
+First generate all the autoconf cruft with:
+
+	autoreconf -fi
+
+Then configure.
+
+If the required versions of libraries and header files are in a non-default
+location (for example OpenSSL 1.1.0 installed in $HOME/local), indicate this
+with user variables.  For example:
+
+	./configure LDFLAGS="-L$HOME/local/lib" CFLAGS="-I$HOME/local/include"
+
